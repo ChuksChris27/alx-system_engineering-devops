@@ -1,14 +1,3 @@
 #!/bin/bash
-
-# Perform addition of 128 with TRUEKNOWLEDGE
-# TRUEKNOWLEDGE should be defined in the environment where this script is executed
-
-# Ensure TRUEKNOWLEDGE is set and not empty
-if [ -z "$TRUEKNOWLEDGE" ]; then
-    echo "TRUEKNOWLEDGE environment variable is not set."
-    exit 1
-fi
-
-# Perform addition and print the result
 RESULT=$((128 + TRUEKNOWLEDGE))
 echo $RESULT
